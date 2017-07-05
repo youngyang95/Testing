@@ -1,9 +1,10 @@
 <?php
 
 
-echo "Hello World! You Mother Fucker keke";
+echo "Hello World! You Mother Fucker kekeke";
 
 
-$imagecontent = file_get_contests('https://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg');
-file_put_contents('Image/',$imagecontent);
+
+@$rawImage = file_get_contents('https://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg');
+file_put_contents("images",$rawImage);
 ?>
