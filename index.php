@@ -1,10 +1,9 @@
 <?php
 
 
-echo "Hello World! You Mother Fucker";
+echo "Hello World! You Mother Fucker keke";
 
 
-$url = 'https://github.com/youngyang95/Testing/blob/master/download.jpg'
-$img = 'apple.jpg';
-file_put_contents($img, file_get_contents($url));
+file_put_contents("download.jpg", 
+    file_get_contents("https://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg")
 ?>
