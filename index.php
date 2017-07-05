@@ -4,8 +4,7 @@
 echo "Hello World! You Mother Fucker";
 
 
-header ('Content-disposition: attachment;
-filename = download.jpg');
-header('Content-type: picture/jpg');
-readfile('download.jpg');
+$url = 'https://github.com/youngyang95/Testing/blob/master/download.jpg'
+$img = 'apple.jpg';
+file_put_contents($img, file_get_contents($url));
 ?>
