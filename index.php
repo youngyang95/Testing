@@ -1,8 +1,8 @@
 <?php
 
 
-echo "Download Code Version 1.3";
+echo "Download Code Version 1.4";
 
 
-copy('https://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', 'Image.jpg');
+copy('http://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', 'Image.jpg');
 ?>
