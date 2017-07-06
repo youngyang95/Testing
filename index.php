@@ -1,15 +1,15 @@
 <?php
 
 
-error_reporting(E_ALL);
 ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-echo "Download Code Version 1.5.1";
+echo "Download Code Version 1.6";
 
+copy('https://drive.google.com/file/d/0BzYOCiHocV0fMENJNERvbnQzRkk/view?usp=sharing', './Image.jpg');
 
-copy('http://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', './Image.jpg');
-
-if(!@copy('http://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', './Image.jpg'))
+if(!@copy('https://drive.google.com/file/d/0BzYOCiHocV0fMENJNERvbnQzRkk/view?usp=sharing', './Image.jpg'))
 {
     $errors= error_get_last();
     echo "COPY ERROR: ".$errors['type'];
