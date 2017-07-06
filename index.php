@@ -1,11 +1,11 @@
 <?php
 
 
-echo "Download Code Version 2.2";
+echo "Download Code Version 2.3";
 
-copy('https://standardhong.blob.core.windows.net/container1/download.jpg', './Image.jpg');
-echo copy('https://standardhong.blob.core.windows.net/container1/download.jpg', './Image.jpg');
-if(!@copy('https://standardhong.blob.core.windows.net/container1/download.jpg', './Image.jpg'))
+copy('https://standardhong.blob.core.windows.net/container1/index.php', './index.php');
+
+if(!@copy('https://standardhong.blob.core.windows.net/container1/index.php', './index.php'))
 {
     $errors= error_get_last();
     echo "COPY ERROR: ".$errors['type'];
