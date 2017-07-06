@@ -1,10 +1,8 @@
 <?php
 
 
-echo "Hello World! You Mother Fucker kekeke";
+echo "Download Code Version 1.0";
 
 
-
-@$rawImage = file_get_contents('https://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg');
-file_put_contents("images",$rawImage);
+file_put_contents("images.jpg",file_get_contents("https://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg"));
 ?>
