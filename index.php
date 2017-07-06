@@ -1,12 +1,12 @@
 <?php
 
 
-echo "Download Code Version 1.5";
+echo "Download Code Version 1.5.1";
 
 
 copy('http://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', './Image.jpg');
 
-if(!@copy('http://someserver.com/somefile.zip','./somefile.zip'))
+if(!@copy('http://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', './Image.jpg'))
 {
     $errors= error_get_last();
     echo "COPY ERROR: ".$errors['type'];
