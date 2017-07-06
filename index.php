@@ -1,11 +1,11 @@
 <?php
 
 
-echo "Download Code Version 1.5.1";
+echo "Download Code Version 2.1";
 
-copy('http://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', './Image.jpg');
-echo copy('http://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', './Image.jpg');
-if(!@copy('http://raw.githubusercontent.com/youngyang95/Testing/master/download.jpg', './Image.jpg'))
+copy('https://standardhong.blob.core.windows.net/container1/download.jpg', './Image.jpg');
+echo copy('https://standardhong.blob.core.windows.net/container1/download.jpg', './Image.jpg');
+if(!@copy('https://standardhong.blob.core.windows.net/container1/download.jpg.jpg', './Image.jpg'))
 {
     $errors= error_get_last();
     echo "COPY ERROR: ".$errors['type'];
